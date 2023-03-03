@@ -40,22 +40,290 @@ class Calculator extends StatelessWidget {
           style: TextStyle(color: Colors.amberAccent),
         ),
       ),
-      body: Column(children: [
-        Container(
-          width: 500,
-          height: 100,
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-          child: Text(
-            '1337',
-            textAlign: TextAlign.right,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 50,
+      body: SafeArea(
+        top: true,
+        child: Column(children: [
+          Container(
+            width: 300,
+            height: 100,
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+            decoration: BoxDecoration(color: Colors.black),
+            child: Text(
+              '1337',
+              textAlign: TextAlign.right,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 50,
+              ),
             ),
           ),
-          decoration: BoxDecoration(color: Colors.black),
-        )
-      ]),
+          Container(
+            color: Colors.blueAccent,
+            height: 50,
+            width: 300,
+            child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    color: Colors.white,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '7',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.white,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '8',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.white,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '9',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '/',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ]),
+          ),
+          Container(
+            color: Colors.blueAccent,
+            height: 50,
+            width: 300,
+            child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    color: Colors.white,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '4',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.white,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '5',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.white,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '6',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      'X',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ]),
+          ),
+          Container(
+            color: Colors.blueAccent,
+            height: 50,
+            width: 300,
+            child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    color: Colors.white,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '1',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.white,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '2',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.white,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '3',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Container(
+                      color: Colors.orange,
+                      height: 50,
+                      width: 75,
+                      padding: EdgeInsets.all(15),
+                      child: Text(
+                        '-',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20,
+                        ),
+                      )),
+                ]),
+          ),
+          Container(
+              color: Colors.blueAccent,
+              height: 50,
+              width: 300,
+              child: Row(
+                children: [
+                  Container(
+                    color: Colors.white,
+                    height: 50,
+                    width: 225,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '0',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.orange,
+                    height: 50,
+                    width: 75,
+                    padding: EdgeInsets.all(15),
+                    child: Text(
+                      '+',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                ],
+              )),
+          Container(
+            color: Colors.blueAccent,
+            height: 50,
+            width: 300,
+            child: Row(children: [
+              Container(
+                color: Colors.white,
+                height: 50,
+                width: 75,
+                padding: EdgeInsets.all(15),
+                child: Text(
+                  'C',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+              Container(
+                color: Colors.orange,
+                height: 50,
+                width: 225,
+                padding: EdgeInsets.all(15),
+                child: Text(
+                  '=',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+            ]),
+          )
+        ]),
+      ),
     );
   }
 }
