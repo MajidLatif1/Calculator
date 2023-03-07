@@ -33,11 +33,11 @@ class Calculator extends StatelessWidget {
       body: SafeArea(
         child: Column(children: [
           inputText('1337'),
-          firstRowContainer("7", "8", "9", "/"),
-          secondRowContainer("4", "5", "6", "X"),
-          thirdRowContainer("1", "2", "3", "-"),
-          fourthRowContainer("0", "+"),
-          fifthRowContainer("C", "=")
+          containerOne(),
+          containerTwo(),
+          containerThree(),
+          containerFour(),
+          containerFive(),
         ]),
       ),
     );

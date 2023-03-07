@@ -17,7 +17,139 @@ Widget inputText(String demo) {
   );
 }
 
-Widget firstRowContainer(String seven, eight, nine, divide) {
+Widget containerOne() {
+  return Container(
+    color: Colors.blueAccent,
+    height: 50,
+    width: 300,
+    child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+      rowContainer('7'),
+      rowContainer('8'),
+      rowContainer('9'),
+      rowContainerOperation("/"),
+    ]),
+  );
+}
+
+Widget containerTwo() {
+  return Container(
+    color: Colors.blueAccent,
+    height: 50,
+    width: 300,
+    child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+      rowContainer('4'),
+      rowContainer('5'),
+      rowContainer('6'),
+      rowContainerOperation("X"),
+    ]),
+  );
+}
+
+Widget containerThree() {
+  return Container(
+    color: Colors.blueAccent,
+    height: 50,
+    width: 300,
+    child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+      rowContainer('1'),
+      rowContainer('2'),
+      rowContainer('3'),
+      rowContainerOperation("-"),
+    ]),
+  );
+}
+
+Widget containerFour() {
+  return Container(
+    color: Colors.blueAccent,
+    height: 50,
+    width: 300,
+    child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [rowContainerZero('0'), rowContainerOperation("+")]),
+  );
+}
+
+Widget containerFive() {
+  return Container(
+    color: Colors.blueAccent,
+    height: 50,
+    width: 300,
+    child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [rowContainer('C'), rowContainerEqual('=')]),
+  );
+}
+
+Widget rowContainer(String val) {
+  return Container(
+    color: Color.fromARGB(255, 187, 178, 178),
+    height: 50,
+    width: 75,
+    padding: EdgeInsets.all(15),
+    child: Text(
+      val,
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        color: Colors.black,
+        fontSize: 20,
+      ),
+    ),
+  );
+}
+
+Widget rowContainerOperation(String operation) {
+  return Container(
+    color: Colors.orange,
+    height: 50,
+    width: 75,
+    padding: EdgeInsets.all(15),
+    child: Text(
+      operation,
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        color: Colors.black,
+        fontSize: 20,
+      ),
+    ),
+  );
+}
+
+Widget rowContainerZero(String zero) {
+  return Container(
+    color: Color.fromARGB(255, 187, 178, 178),
+    height: 50,
+    width: 225,
+    padding: EdgeInsets.all(15),
+    child: Text(
+      zero,
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        color: Colors.black,
+        fontSize: 20,
+      ),
+    ),
+  );
+}
+
+Widget rowContainerEqual(String cancle) {
+  return Container(
+    color: Colors.orange,
+    height: 50,
+    width: 225,
+    padding: EdgeInsets.all(15),
+    child: Text(
+      cancle,
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        color: Colors.black,
+        fontSize: 20,
+      ),
+    ),
+  );
+}
+
+/*Widget firstRowContainer({seven, eight, nine, divide}) {
   return Container(
     color: Colors.blueAccent,
     height: 50,
@@ -288,4 +420,4 @@ Widget fifthRowContainer(String cancle, equal) {
       ),
     ]),
   );
-}
+}*/
